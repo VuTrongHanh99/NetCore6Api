@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zNPTkot2evhcD6bKcxY39VjKbb0Up53rISULPUwXFRJXiF/cb4yAEhOGZV9IJ2QogUNTiNQb50hWbHNe0JuD4g==",
+  "dgSpecHash": "eYm6yMn8vbo+Hn7ySlJYYoQMxuGqOVnSQcH59y2BGDa4vpiri5RyeFBm0FoZyeOEQz35f/5wg1rCbz7dhbWtug==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\Desktop\\NetCore6WebApi\\Netcore6\\MyApiNetCore6\\MyApiNetCore6.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\Desktop\\Netcore6\\MyApiNetCore6\\MyApiNetCore6.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

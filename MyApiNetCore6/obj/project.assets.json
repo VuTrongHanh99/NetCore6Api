@@ -5468,11 +5468,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\Desktop\\NetCore6WebApi\\Netcore6\\MyApiNetCore6\\MyApiNetCore6.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\Desktop\\Netcore6\\MyApiNetCore6\\MyApiNetCore6.csproj",
       "projectName": "MyApiNetCore6",
-      "projectPath": "C:\\Users\\Admin\\Desktop\\NetCore6WebApi\\Netcore6\\MyApiNetCore6\\MyApiNetCore6.csproj",
+      "projectPath": "C:\\Users\\Admin\\Desktop\\Netcore6\\MyApiNetCore6\\MyApiNetCore6.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\Desktop\\NetCore6WebApi\\Netcore6\\MyApiNetCore6\\obj\\",
+      "outputPath": "C:\\Users\\Admin\\Desktop\\Netcore6\\MyApiNetCore6\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
