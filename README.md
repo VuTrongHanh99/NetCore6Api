@@ -6,7 +6,7 @@ Microsoft.EntityFrameworkCore.Tools<br/>
 <br/>==================Tổ chức thư mục=================<br/>
 
 <br/>==================Tạo Database bằng tools=================<br/>
-Add-Migration DbInit<br/>
-Update-Database<br/>
+Add-Migration DbInit						<br/>
+Update-Database							<br/>
 ====>Mở cổng port 1433<br/>
 <link>https://stackoverflow.com/questions/18060667/cannot-connect-to-server-a-network-related-or-instance-specific-error</link>
