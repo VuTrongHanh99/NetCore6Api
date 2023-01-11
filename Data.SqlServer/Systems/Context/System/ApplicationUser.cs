@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 
-namespace MyApiNetCore6.Data
+namespace Data.SqlServer.Data
 {
     public class ApplicationUser : IdentityUser
     {

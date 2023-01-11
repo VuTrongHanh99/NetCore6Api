@@ -1783,6 +1783,22 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "Data.SqlServer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity": "2.2.0",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.10",
+          "Microsoft.EntityFrameworkCore": "6.0.10",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.10"
+        },
+        "compile": {
+          "bin/placeholder/Data.SqlServer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Data.SqlServer.dll": {}
+        }
       }
     }
   },
@@ -5896,10 +5912,16 @@
         "system.xml.xdocument.4.0.11.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "Data.SqlServer/1.0.0": {
+      "type": "project",
+      "path": "../Data.SqlServer/Data.SqlServer.csproj",
+      "msbuildProject": "../Data.SqlServer/Data.SqlServer.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Data.SqlServer >= 1.0.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 6.0.10",
       "Microsoft.AspNetCore.Identity >= 2.2.0",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 6.0.10",
@@ -5940,7 +5962,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Admin\\Desktop\\NetCore6Api\\Data.SqlServer\\Data.SqlServer.csproj": {
+              "projectPath": "C:\\Users\\Admin\\Desktop\\NetCore6Api\\Data.SqlServer\\Data.SqlServer.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -6007,7 +6033,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.404\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.405\\RuntimeIdentifierGraph.json"
       }
     }
   }

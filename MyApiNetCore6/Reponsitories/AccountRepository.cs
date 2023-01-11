@@ -1,6 +1,6 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Data.SqlServer.Data;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.IdentityModel.Tokens;
-using MyApiNetCore6.Data;
 using MyApiNetCore6.Models;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;

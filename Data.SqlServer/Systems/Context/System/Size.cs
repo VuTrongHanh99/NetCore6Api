@@ -1,13 +1,17 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace MyApiNetCore6.Data
+namespace Data.SqlServer.Data
 {
     [Table("Size")]
     public class Size
     {
         [Key]
+        [Column("id")]
         public int Id { get; set; }
-        public string? Name { get; set; }
+
+        [StringLength(64)]
+        [Column("code")]
+        public string Code { get; set; }
     }
 }

@@ -1,4 +1,4 @@
-﻿using MyApiNetCore6.Data;
+﻿using Data.SqlServer.Data;
 
 namespace MyApiNetCore6.Reponsitories
 {

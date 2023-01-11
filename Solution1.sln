@@ -3,7 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32519.379
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyApiNetCore6", "MyApiNetCore6\MyApiNetCore6.csproj", "{8DC68001-85AF-417B-923F-86EB48C2C6B8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyApiNetCore6", "MyApiNetCore6\MyApiNetCore6.csproj", "{8DC68001-85AF-417B-923F-86EB48C2C6B8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{426EBD27-CED3-4B9D-85D2-33DE48A9F2D0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{53CD54F7-A11F-46AC-A94C-945321B36B17}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastucture_CoSoHaTang", "Infrastucture_CoSoHaTang", "{73016F71-9260-492E-B1E1-5986A39F2609}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{5E51DAA5-9012-42C4-9B43-FE9665470DC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data.SqlServer", "Data.SqlServer\Data.SqlServer.csproj", "{45A11D14-A53B-4852-AFBC-37681D7E03F8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +25,19 @@ Global
 		{8DC68001-85AF-417B-923F-86EB48C2C6B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8DC68001-85AF-417B-923F-86EB48C2C6B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8DC68001-85AF-417B-923F-86EB48C2C6B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45A11D14-A53B-4852-AFBC-37681D7E03F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45A11D14-A53B-4852-AFBC-37681D7E03F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45A11D14-A53B-4852-AFBC-37681D7E03F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45A11D14-A53B-4852-AFBC-37681D7E03F8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{53CD54F7-A11F-46AC-A94C-945321B36B17} = {426EBD27-CED3-4B9D-85D2-33DE48A9F2D0}
+		{73016F71-9260-492E-B1E1-5986A39F2609} = {426EBD27-CED3-4B9D-85D2-33DE48A9F2D0}
+		{5E51DAA5-9012-42C4-9B43-FE9665470DC7} = {73016F71-9260-492E-B1E1-5986A39F2609}
+		{45A11D14-A53B-4852-AFBC-37681D7E03F8} = {5E51DAA5-9012-42C4-9B43-FE9665470DC7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7097162E-D204-4805-AAA0-9FCBB4A04B64}

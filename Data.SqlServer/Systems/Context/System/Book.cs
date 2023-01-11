@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace MyApiNetCore6.Data
+namespace Data.SqlServer.Data
 {
     [Table("Book")]
     public class Book
