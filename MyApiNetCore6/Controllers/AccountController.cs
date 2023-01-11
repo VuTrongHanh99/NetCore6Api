@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using MyApiNetCore6.Models;
 using MyApiNetCore6.Reponsitories;
 
@@ -13,7 +14,7 @@ namespace MyApiNetCore6.Controllers
             accountRepo = repo;
         }
 
-        [HttpPost("SignUp")]
+        [AllowAnonymous,HttpPost("SignUp")]
         public async Task<IActionResult> SignUp(SignUpModel signUpModel)
         {
             var result = await accountRepo.SignUpAsync(signUpModel);
@@ -25,7 +26,7 @@ namespace MyApiNetCore6.Controllers
             return Unauthorized();
         }
 
-        [HttpPost("SignIn")]
+        [AllowAnonymous,HttpPost("SignIn")]
         public async Task<IActionResult> SignIn(SignInModel signInModel)
         {
             var result = await accountRepo.SignInAsync(signInModel);

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\Desktop\\Netcore6\\MyApiNetCore6\\MyApiNetCore6.csproj": {}
+    "C:\\Users\\Admin\\Desktop\\NetCore6Api\\MyApiNetCore6\\MyApiNetCore6.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\Desktop\\Netcore6\\MyApiNetCore6\\MyApiNetCore6.csproj": {
+    "C:\\Users\\Admin\\Desktop\\NetCore6Api\\MyApiNetCore6\\MyApiNetCore6.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\Netcore6\\MyApiNetCore6\\MyApiNetCore6.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\NetCore6Api\\MyApiNetCore6\\MyApiNetCore6.csproj",
         "projectName": "MyApiNetCore6",
-        "projectPath": "C:\\Users\\Admin\\Desktop\\Netcore6\\MyApiNetCore6\\MyApiNetCore6.csproj",
+        "projectPath": "C:\\Users\\Admin\\Desktop\\NetCore6Api\\MyApiNetCore6\\MyApiNetCore6.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Desktop\\Netcore6\\MyApiNetCore6\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\Desktop\\NetCore6Api\\MyApiNetCore6\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -46,6 +46,10 @@
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[6.0.10, )"
+            },
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",

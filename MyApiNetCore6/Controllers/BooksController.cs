@@ -1,16 +1,18 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using MyApiNetCore6.Data;
 
 namespace MyApiNetCore6.Controllers
 {
-    [Route("api/[controller]")]
+    [Authorize]
     [ApiController]
+    [Route("api/[controller]")]
     public class BooksController : ControllerBase
     {
-        private readonly BookStoreContext? _context;
-        public BooksController(BookStoreContext? context)
+        private readonly ProductStoreContext? _context;
+        public BooksController(ProductStoreContext? context)
         {
             _context = context;
         }
