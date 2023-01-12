@@ -11,26 +11,32 @@ namespace MyApiNetCore6.Controllers
     [Route("api/[controller]")]
     public class BooksController : ControllerBase
     {
-        private readonly ProductStoreContext? _context;
-        public BooksController(ProductStoreContext? context)
+        private readonly ProductStoreContext _context;
+        public BooksController(ProductStoreContext context)
         {
             _context = context;
         }
+        // GET: api/Books
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Book>>> GetBooks()
         {
-            return await _context.Books.ToListAsync();
+            return await _context.Books!.ToListAsync();
         }
+
+        // GET: api/Books/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Book>> GetBooks(int id)
+        public async Task<ActionResult<Book>> GetBook(int id)
         {
-            var book = await _context.Books.FindAsync(id);
-            if(book == null)
+            var book = await _context.Books!.FindAsync(id);
+
+            if (book == null)
             {
                 return NotFound();
             }
+
             return book;
         }
+
         // PUT: api/Books/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
