@@ -24,4 +24,8 @@
     <ProjectReference Include="..\Data.SqlServer\Data.SqlServer.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Data\" />
+  </ItemGroup>
+
 </Project>

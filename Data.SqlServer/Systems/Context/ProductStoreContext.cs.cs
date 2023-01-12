@@ -1,7 +1,7 @@
 ﻿using Data.SqlServer.Data;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-namespace Data.SqlServer.Systems.Context
+namespace Data.SqlServer.Context
 {
     public class ProductStoreContext : IdentityUserContext<ApplicationUser>
     {

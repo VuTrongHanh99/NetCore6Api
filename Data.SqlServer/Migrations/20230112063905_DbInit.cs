@@ -3,9 +3,9 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace MyApiNetCore6.Migrations
+namespace Data.SqlServer.Migrations
 {
-    public partial class Init : Migration
+    public partial class DbInit : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -40,13 +40,13 @@ namespace MyApiNetCore6.Migrations
                 name: "BodyType",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
+                    id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    code = table.Column<string>(type: "nvarchar(64)", maxLength: 64, nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_BodyType", x => x.Id);
+                    table.PrimaryKey("PK_BodyType", x => x.id);
                 });
 
             migrationBuilder.CreateTable(
@@ -70,26 +70,26 @@ namespace MyApiNetCore6.Migrations
                 name: "Make",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
+                    id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    code = table.Column<string>(type: "nvarchar(64)", maxLength: 64, nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Make", x => x.Id);
+                    table.PrimaryKey("PK_Make", x => x.id);
                 });
 
             migrationBuilder.CreateTable(
                 name: "Size",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
+                    id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    code = table.Column<string>(type: "nvarchar(64)", maxLength: 64, nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Size", x => x.Id);
+                    table.PrimaryKey("PK_Size", x => x.id);
                 });
 
             migrationBuilder.CreateTable(
@@ -155,7 +155,7 @@ namespace MyApiNetCore6.Migrations
 
             migrationBuilder.InsertData(
                 table: "BodyType",
-                columns: new[] { "Id", "Name" },
+                columns: new[] { "id", "code" },
                 values: new object[,]
                 {
                     { 1, "Coupe" },
@@ -171,7 +171,7 @@ namespace MyApiNetCore6.Migrations
 
             migrationBuilder.InsertData(
                 table: "Size",
-                columns: new[] { "Id", "Name" },
+                columns: new[] { "id", "code" },
                 values: new object[,]
                 {
                     { 1, "Subcompact" },
