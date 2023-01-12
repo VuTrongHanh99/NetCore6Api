@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\Desktop\\NetCore6Api\\MyApiNetCore6\\MyApiNetCore6.csproj": {}
+    "C:\\Users\\Admin\\Desktop\\hanhngusi\\NetCore6Api\\MyApiNetCore6\\MyApiNetCore6.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\Desktop\\NetCore6Api\\Data.SqlServer\\Data.SqlServer.csproj": {
+    "C:\\Users\\Admin\\Desktop\\hanhngusi\\NetCore6Api\\Data.SqlServer\\Data.SqlServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\NetCore6Api\\Data.SqlServer\\Data.SqlServer.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\hanhngusi\\NetCore6Api\\Data.SqlServer\\Data.SqlServer.csproj",
         "projectName": "Data.SqlServer",
-        "projectPath": "C:\\Users\\Admin\\Desktop\\NetCore6Api\\Data.SqlServer\\Data.SqlServer.csproj",
+        "projectPath": "C:\\Users\\Admin\\Desktop\\hanhngusi\\NetCore6Api\\Data.SqlServer\\Data.SqlServer.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Desktop\\NetCore6Api\\Data.SqlServer\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\Desktop\\hanhngusi\\NetCore6Api\\Data.SqlServer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -86,14 +86,14 @@
         }
       }
     },
-    "C:\\Users\\Admin\\Desktop\\NetCore6Api\\MyApiNetCore6\\MyApiNetCore6.csproj": {
+    "C:\\Users\\Admin\\Desktop\\hanhngusi\\NetCore6Api\\MyApiNetCore6\\MyApiNetCore6.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\NetCore6Api\\MyApiNetCore6\\MyApiNetCore6.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\hanhngusi\\NetCore6Api\\MyApiNetCore6\\MyApiNetCore6.csproj",
         "projectName": "MyApiNetCore6",
-        "projectPath": "C:\\Users\\Admin\\Desktop\\NetCore6Api\\MyApiNetCore6\\MyApiNetCore6.csproj",
+        "projectPath": "C:\\Users\\Admin\\Desktop\\hanhngusi\\NetCore6Api\\MyApiNetCore6\\MyApiNetCore6.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Desktop\\NetCore6Api\\MyApiNetCore6\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\Desktop\\hanhngusi\\NetCore6Api\\MyApiNetCore6\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -113,11 +113,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Admin\\Desktop\\NetCore6Api\\Data.SqlServer\\Data.SqlServer.csproj": {
-                "projectPath": "C:\\Users\\Admin\\Desktop\\NetCore6Api\\Data.SqlServer\\Data.SqlServer.csproj"
-              },
-              "C:\\Users\\Admin\\Desktop\\NetCore6Api\\NetCore.Domain\\NetCore.Domain.csproj": {
-                "projectPath": "C:\\Users\\Admin\\Desktop\\NetCore6Api\\NetCore.Domain\\NetCore.Domain.csproj"
+              "C:\\Users\\Admin\\Desktop\\hanhngusi\\NetCore6Api\\Data.SqlServer\\Data.SqlServer.csproj": {
+                "projectPath": "C:\\Users\\Admin\\Desktop\\hanhngusi\\NetCore6Api\\Data.SqlServer\\Data.SqlServer.csproj"
               }
             }
           }
@@ -132,10 +129,6 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
-              "target": "Package",
-              "version": "[12.0.0, )"
-            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[6.0.10, )"
@@ -160,6 +153,12 @@
               "target": "Package",
               "version": "[6.0.10, )"
             },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
@@ -180,64 +179,6 @@
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.405\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Users\\Admin\\Desktop\\NetCore6Api\\NetCore.Domain\\NetCore.Domain.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\NetCore6Api\\NetCore.Domain\\NetCore.Domain.csproj",
-        "projectName": "NetCore.Domain",
-        "projectPath": "C:\\Users\\Admin\\Desktop\\NetCore6Api\\NetCore.Domain\\NetCore.Domain.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Desktop\\NetCore6Api\\NetCore.Domain\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net6.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
-            "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

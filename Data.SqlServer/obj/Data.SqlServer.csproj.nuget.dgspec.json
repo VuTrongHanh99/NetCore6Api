@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\Desktop\\NetCore6Api\\Data.SqlServer\\Data.SqlServer.csproj": {}
+    "C:\\Users\\Admin\\Desktop\\hanhngusi\\NetCore6Api\\Data.SqlServer\\Data.SqlServer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\Desktop\\NetCore6Api\\Data.SqlServer\\Data.SqlServer.csproj": {
+    "C:\\Users\\Admin\\Desktop\\hanhngusi\\NetCore6Api\\Data.SqlServer\\Data.SqlServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\NetCore6Api\\Data.SqlServer\\Data.SqlServer.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\hanhngusi\\NetCore6Api\\Data.SqlServer\\Data.SqlServer.csproj",
         "projectName": "Data.SqlServer",
-        "projectPath": "C:\\Users\\Admin\\Desktop\\NetCore6Api\\Data.SqlServer\\Data.SqlServer.csproj",
+        "projectPath": "C:\\Users\\Admin\\Desktop\\hanhngusi\\NetCore6Api\\Data.SqlServer\\Data.SqlServer.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Desktop\\NetCore6Api\\Data.SqlServer\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\Desktop\\hanhngusi\\NetCore6Api\\Data.SqlServer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

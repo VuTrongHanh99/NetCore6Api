@@ -5,7 +5,7 @@ namespace Data.SqlServer.Context
 {
     public class ProductStoreContext : IdentityUserContext<ApplicationUser>
     {
-        public ProductStoreContext ( DbContextOptions<ProductStoreContext> options) : base(options)
+        public ProductStoreContext(DbContextOptions<ProductStoreContext> options) : base(options)
         {
         }
         #region

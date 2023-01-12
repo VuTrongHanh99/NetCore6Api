@@ -80,7 +80,7 @@ builder.Services.AddAuthentication(options =>
 });
 
 #region config AUTO Map Map giữa ModelEntities và DataSql Database
-builder.Services.AddAutoMapper(typeof(Program));
+//builder.Services.AddAutoMapper(typeof(Program));
 #endregion
 
 var app = builder.Build();
