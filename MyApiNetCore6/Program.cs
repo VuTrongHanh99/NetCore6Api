@@ -52,13 +52,13 @@ builder.Services.AddCors(options => options.AddDefaultPolicy(policy =>
 builder.Services.AddScoped<IAccountRepository, AccountRepository>();
 
 //Kết nối sever database context
-builder.Services.AddDbContext<ProductStoreContext>(options =>
+builder.Services.AddDbContext<DataContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("ProductStore"));
 });
 //Kết nối sever database context cùng với Auth + Identity + Token
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
-    .AddEntityFrameworkStores<ProductStoreContext>().AddDefaultTokenProviders();
+    .AddEntityFrameworkStores<DataContext>().AddDefaultTokenProviders();
 builder.Services.AddAuthentication(options =>
 {
     options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;

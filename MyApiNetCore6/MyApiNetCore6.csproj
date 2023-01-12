@@ -7,13 +7,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <Compile Remove="Data\**" />
-	  <Content Remove="Data\**" />
-	  <EmbeddedResource Remove="Data\**" />
-	  <None Remove="Data\**" />
-	</ItemGroup>
-
-	<ItemGroup>
+		<PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
 		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.10" />
 		<PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
 		<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.10" />
@@ -29,6 +23,7 @@
 
 	<ItemGroup>
 		<ProjectReference Include="..\Data.SqlServer\Data.SqlServer.csproj" />
+		<ProjectReference Include="..\NetCore.Domain\NetCore.Domain.csproj" />
 	</ItemGroup>
 
 </Project>

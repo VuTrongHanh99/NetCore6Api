@@ -1,0 +1,12 @@
+C:\Users\Admin\Desktop\hanhngusi\NetCore6Api\NetCore.Application\bin\Debug\net6.0\NetCore.Application.deps.json
+C:\Users\Admin\Desktop\hanhngusi\NetCore6Api\NetCore.Application\bin\Debug\net6.0\NetCore.Application.dll
+C:\Users\Admin\Desktop\hanhngusi\NetCore6Api\NetCore.Application\bin\Debug\net6.0\NetCore.Application.pdb
+C:\Users\Admin\Desktop\hanhngusi\NetCore6Api\NetCore.Application\obj\Debug\net6.0\NetCore.Application.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\hanhngusi\NetCore6Api\NetCore.Application\obj\Debug\net6.0\NetCore.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\hanhngusi\NetCore6Api\NetCore.Application\obj\Debug\net6.0\NetCore.Application.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\hanhngusi\NetCore6Api\NetCore.Application\obj\Debug\net6.0\NetCore.Application.AssemblyInfo.cs
+C:\Users\Admin\Desktop\hanhngusi\NetCore6Api\NetCore.Application\obj\Debug\net6.0\NetCore.Application.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\hanhngusi\NetCore6Api\NetCore.Application\obj\Debug\net6.0\NetCore.Application.dll
+C:\Users\Admin\Desktop\hanhngusi\NetCore6Api\NetCore.Application\obj\Debug\net6.0\refint\NetCore.Application.dll
+C:\Users\Admin\Desktop\hanhngusi\NetCore6Api\NetCore.Application\obj\Debug\net6.0\NetCore.Application.pdb
+C:\Users\Admin\Desktop\hanhngusi\NetCore6Api\NetCore.Application\obj\Debug\net6.0\ref\NetCore.Application.dll

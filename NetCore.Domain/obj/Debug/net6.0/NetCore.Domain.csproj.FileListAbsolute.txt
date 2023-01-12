@@ -1,0 +1,12 @@
+C:\Users\Admin\Desktop\hanhngusi\NetCore6Api\NetCore.Domain\bin\Debug\net6.0\NetCore.Domain.deps.json
+C:\Users\Admin\Desktop\hanhngusi\NetCore6Api\NetCore.Domain\bin\Debug\net6.0\NetCore.Domain.dll
+C:\Users\Admin\Desktop\hanhngusi\NetCore6Api\NetCore.Domain\bin\Debug\net6.0\NetCore.Domain.pdb
+C:\Users\Admin\Desktop\hanhngusi\NetCore6Api\NetCore.Domain\obj\Debug\net6.0\NetCore.Domain.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\hanhngusi\NetCore6Api\NetCore.Domain\obj\Debug\net6.0\NetCore.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\hanhngusi\NetCore6Api\NetCore.Domain\obj\Debug\net6.0\NetCore.Domain.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\hanhngusi\NetCore6Api\NetCore.Domain\obj\Debug\net6.0\NetCore.Domain.AssemblyInfo.cs
+C:\Users\Admin\Desktop\hanhngusi\NetCore6Api\NetCore.Domain\obj\Debug\net6.0\NetCore.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\hanhngusi\NetCore6Api\NetCore.Domain\obj\Debug\net6.0\NetCore.Domain.dll
+C:\Users\Admin\Desktop\hanhngusi\NetCore6Api\NetCore.Domain\obj\Debug\net6.0\refint\NetCore.Domain.dll
+C:\Users\Admin\Desktop\hanhngusi\NetCore6Api\NetCore.Domain\obj\Debug\net6.0\NetCore.Domain.pdb
+C:\Users\Admin\Desktop\hanhngusi\NetCore6Api\NetCore.Domain\obj\Debug\net6.0\ref\NetCore.Domain.dll

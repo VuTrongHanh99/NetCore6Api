@@ -3,9 +3,9 @@ using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 namespace Data.SqlServer.Context
 {
-    public class ProductStoreContext : IdentityUserContext<ApplicationUser>
+    public class DataContext : IdentityUserContext<ApplicationUser>
     {
-        public ProductStoreContext(DbContextOptions<ProductStoreContext> options) : base(options)
+        public DataContext(DbContextOptions<DataContext> options) : base(options)
         {
         }
         #region

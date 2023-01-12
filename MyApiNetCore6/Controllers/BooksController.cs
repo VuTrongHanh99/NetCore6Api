@@ -11,8 +11,8 @@ namespace MyApiNetCore6.Controllers
     [Route("api/[controller]")]
     public class BooksController : ControllerBase
     {
-        private readonly ProductStoreContext _context;
-        public BooksController(ProductStoreContext context)
+        private readonly DataContext _context;
+        public BooksController(DataContext context)
         {
             _context = context;
         }

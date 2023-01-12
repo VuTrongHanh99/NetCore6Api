@@ -4,6 +4,7 @@ EntityFramework ########## Microsoft.EntityFrameworkCore.Design			<br/>
 Microsoft.EntityFrameworkCore							<br/>
 Microsoft.EntityFrameworkCore.SqlServer						<br/>
 Microsoft.EntityFrameworkCore.Tools						<br/>
+AutoMapper.Extensions.Microsoft.DependencyInjection				<br/>
 <br/>==================Tổ chức thư mục=================				<br/>
 
 <br/>==================Tạo Database bằng tools=================<br/>
