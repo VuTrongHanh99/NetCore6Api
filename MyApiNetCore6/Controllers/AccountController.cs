@@ -5,19 +5,21 @@ using MyApiNetCore6.Reponsitories;
 
 namespace MyApiNetCore6.Controllers
 {
+    [Route("api/[controller]")]
+    [ApiController]
     public class AccountController : Controller
     {
-        private readonly IAccountRepository accountRepo;
+        private readonly IAccountRepository _accountRepository;
 
         public AccountController(IAccountRepository repo)
         {
-            accountRepo = repo;
+            _accountRepository = repo;
         }
 
         [HttpPost("SignUp")]
         public async Task<IActionResult> SignUp(SignUpModel signUpModel)
         {
-            var result = await accountRepo.SignUpAsync(signUpModel);
+            var result = await _accountRepository.SignUpAsync(signUpModel);
             if (result.Succeeded)
             {
                 return Ok(result.Succeeded);
@@ -29,14 +31,23 @@ namespace MyApiNetCore6.Controllers
         [HttpPost("SignIn")]
         public async Task<IActionResult> SignIn(SignInModel signInModel)
         {
-            var result = await accountRepo.SignInAsync(signInModel);
+            var result = await _accountRepository.SignInAsync(signInModel);
 
             if (string.IsNullOrEmpty(result))
             {
-                return Unauthorized();
+                return Ok(new ApiResponse
+                {
+                    Success = false,
+                    Message = "Invalid username/password"
+                });
             }
 
-            return Ok(result);
+            return Ok(new ApiResponse
+            {
+                Success = true,
+                Message = "Authenticate success",
+                Data = result
+            });
         }
     }
 }

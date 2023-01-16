@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5UNxpuQAyLNrpfC6amsYB/JCqYYt2WEAOQoNyyE1y8QUFhCx/QAwFSYlwAKG4ZlDs/t8l5e6Dw/N58rW0h0S2w==",
+  "dgSpecHash": "ISvshWfSPn2ha1CwyLzcfYfcaf2tqQHUbyfxyu3fWSsQ+VlGW8VHXfPbHObe5cHmXK8ejv+tnDpozG+j+Z5gPQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\Desktop\\hanhngusi\\NetCore6Api\\Data.SqlServer\\Data.SqlServer.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\Desktop\\NetCore6Api\\Data.SqlServer\\Data.SqlServer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",

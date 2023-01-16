@@ -26,20 +26,25 @@ namespace MyApiNetCore6.Reponsitories
             var result = await _signInManager.PasswordSignInAsync(model.Email, model.Password, false, false);
             if (!result.Succeeded)
             {
+                //Trả về chuỗi rỗng
                 return string.Empty;
             }
+            //Tạo ra các quyền ; Tọa ra các danh sách Claim
             var authClaims = new List<Claim>
             {
                 new Claim(ClaimTypes.Name, model.Email),
                 new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
                 new Claim(ClaimTypes.Email, model.Email),
             };
+            //Lấy keySecret AuthKey
             var authenKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["JWT:Secret"]));
+            //Tạo mới 1 token
             var token = new JwtSecurityToken(
-                issuer: _configuration["JWT:ValidIssuer"],
-                audience: _configuration["JWT:ValidAudience"],
-                expires: DateTime.Now.AddMinutes(20),
-                claims: authClaims,
+                issuer: _configuration["JWT:ValidIssuer"],      //lấy ra các default từ Appsetting.json
+                audience: _configuration["JWT:ValidAudience"],  //lấy ra các default từ Appsetting.json
+                expires: DateTime.Now.AddMinutes(20),           //Set thời gian hết hạn của token
+                claims: authClaims,                             //Danh sách các CLaim
+                //Cuối cùng quan trọng là kí lên token
                 signingCredentials: new SigningCredentials(authenKey, SecurityAlgorithms.HmacSha512Signature)
             );
 
@@ -56,6 +61,11 @@ namespace MyApiNetCore6.Reponsitories
                 UserName = model.Email
             };
             return await _userManager.CreateAsync(user,model.Password);
+        }
+        private string GenerateToken(SignInModel model)
+        {
+
+            return null;
         }
     }
 }

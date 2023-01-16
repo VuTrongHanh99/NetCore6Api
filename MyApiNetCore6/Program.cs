@@ -10,40 +10,38 @@ using MyApiNetCore6.Reponsitories;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
+#region          Thêm LOGIN header Api Swagger
+builder.Services.AddSwaggerGen(options =>
+{
+    options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+    {
+        Scheme = "Bearer",
+        BearerFormat = "JWT",
+        In = ParameterLocation.Header,
+        Name = "Authorization",
+        Description = "Bearer Authentication with JWT Token",
+        Type = SecuritySchemeType.Http
+    });
+    options.AddSecurityRequirement(new OpenApiSecurityRequirement
+    {
+        {
+            new OpenApiSecurityScheme
+            {
+                Reference = new OpenApiReference
+                {
+                    Id = "Bearer",
+                    Type = ReferenceType.SecurityScheme
+                }
+            },
+            new List<string>()
+        }
+    });
+});
+#endregion
 // Add services to the container.
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-#region          Thêm LOGIN header Api Swagger
-builder.Services.AddSwaggerGen(
-    //c => {
-    //c.SwaggerDoc("v1", new OpenApiInfo
-    //{
-    //    Title = "JWTToken_Auth_API",
-    //    Version = "v1"
-    //});
-    //c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme()
-    //{
-    //    Name = "Authorization",
-    //    Type = SecuritySchemeType.ApiKey,
-    //    Scheme = "Bearer",
-    //    BearerFormat = "JWT",
-    //    In = ParameterLocation.Header,
-    //    Description = "JWT Authorization header using the Bearer scheme. \r\n\r\n Enter 'Bearer' [space] and then your token in the text input below.\r\n\r\nExample: \"Bearer 1safsfsdfdfd\"",
-    //});
-    //c.AddSecurityRequirement(new OpenApiSecurityRequirement {
-    //    {
-    //        new OpenApiSecurityScheme {
-    //            Reference = new OpenApiReference {
-    //                Type = ReferenceType.SecurityScheme,
-    //                    Id = "Bearer"
-    //            }
-    //        },
-    //        new string[] {}
-    //    }
-    //});}
-);
-#endregion
 #region    Cấu hình DataContext
 //Api cho nhiều trình duyệt, ứng dụng khác sử dụng được bằng các cấu hình
 builder.Services.AddCors(options =>
@@ -59,31 +57,32 @@ builder.Services.AddDbContext<DataContext>(options => {
 #endregion
 #region config AUTO Map Map giữa ModelEntities và DataSql Database
 builder.Services.AddAutoMapper(typeof(Program));
-//Đăng ký để sủ dụng Repository
+#endregion
+#region  Đăng ký để sử dụng Repository
 //Life cycle DI: AddSignleton(), AddTransient(), AddScoped()
 builder.Services.AddScoped<IBookRepository, BookRepository>();
 builder.Services.AddScoped<IAccountRepository, AccountRepository>();
 #endregion
-
+#region  KHai báo lớp đăng nhập hệ thống Auth
 builder.Services.AddAuthentication(options =>
 {
-    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-    options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
-}).AddJwtBearer(options => {
-    options.SaveToken = true;
-    options.RequireHttpsMetadata = false;
-    options.TokenValidationParameters = new TokenValidationParameters
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;     //Mức default Auth
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;        //Mức độ thử thách
+    options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;                 //Mức độ 3
+}).AddJwtBearer(options => {                                                        //Cấu hình thêm 1 số thứ như thời gian sống, lấy ở đâu     
+    options.SaveToken = true;                                                       //Token có save không 
+    options.RequireHttpsMetadata = false;               
+    options.TokenValidationParameters = new TokenValidationParameters               
     {
-        ValidateIssuer = true,
-        ValidateAudience = true,
-        ValidAudience = builder.Configuration["JWT:ValidAudience"],
-        ValidIssuer = builder.Configuration["JWT:ValidIssuer"],
-        ValidateIssuerSigningKey = true,
+        ValidateIssuer = true,                                      //Cấp phép
+        ValidateAudience = true,                                    //
+        ValidateIssuerSigningKey = true,                            //
+        ValidAudience = builder.Configuration["JWT:ValidAudience"], //Lấy bên Appsetting.json
+        ValidIssuer = builder.Configuration["JWT:ValidIssuer"],     //Lấy bên Appsetting.json
         IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JWT:Secret"]))
     };
 });
-
+#endregion
 
 var app = builder.Build();
 
@@ -96,9 +95,9 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseAuthorization();
 //thêm quyền đăng nhập
 app.UseAuthentication();
-app.UseAuthorization();
 
 app.MapControllers();
 

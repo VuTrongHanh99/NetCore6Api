@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gqzX5RvRr/4fMM/7gqHpwYg3rHKtZIHAPu4dbTZ0pHxtiZ99nT6slY8n+LP9G+NWXyAk+/4pOJH5Xpx+8q7pUQ==",
+  "dgSpecHash": "izfYGWz7MfiFeJZ/VoEI6ORPF1qg5VHWiBcqHxdBkatNi5hfI++xUt8dfmOqA4pKVlxnUA4JxjgTDyzYNgOC8Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\Desktop\\hanhngusi\\NetCore6Api\\NetCore.Application\\NetCore.Application.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\Desktop\\NetCore6Api\\NetCore.Application\\NetCore.Application.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

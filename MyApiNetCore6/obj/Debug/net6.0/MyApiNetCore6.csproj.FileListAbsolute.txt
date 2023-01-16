@@ -309,3 +309,9 @@ C:\Users\Admin\Desktop\hanhngusi\NetCore6Api\MyApiNetCore6\obj\Debug\net6.0\refi
 C:\Users\Admin\Desktop\hanhngusi\NetCore6Api\MyApiNetCore6\obj\Debug\net6.0\MyApiNetCore6.pdb
 C:\Users\Admin\Desktop\hanhngusi\NetCore6Api\MyApiNetCore6\obj\Debug\net6.0\MyApiNetCore6.genruntimeconfig.cache
 C:\Users\Admin\Desktop\hanhngusi\NetCore6Api\MyApiNetCore6\obj\Debug\net6.0\ref\MyApiNetCore6.dll
+C:\Users\Admin\Desktop\NetCore6Api\MyApiNetCore6\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\Admin\Desktop\NetCore6Api\MyApiNetCore6\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Admin\Desktop\NetCore6Api\MyApiNetCore6\bin\Debug\net6.0\Humanizer.dll
+C:\Users\Admin\Desktop\NetCore6Api\MyApiNetCore6\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Admin\Desktop\NetCore6Api\MyApiNetCore6\bin\Debug\net6.0\NetCore.Domain.dll
+C:\Users\Admin\Desktop\NetCore6Api\MyApiNetCore6\bin\Debug\net6.0\NetCore.Domain.pdb

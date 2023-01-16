@@ -6011,11 +6011,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\Desktop\\hanhngusi\\NetCore6Api\\MyApiNetCore6\\MyApiNetCore6.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\Desktop\\NetCore6Api\\MyApiNetCore6\\MyApiNetCore6.csproj",
       "projectName": "MyApiNetCore6",
-      "projectPath": "C:\\Users\\Admin\\Desktop\\hanhngusi\\NetCore6Api\\MyApiNetCore6\\MyApiNetCore6.csproj",
+      "projectPath": "C:\\Users\\Admin\\Desktop\\NetCore6Api\\MyApiNetCore6\\MyApiNetCore6.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\Desktop\\hanhngusi\\NetCore6Api\\MyApiNetCore6\\obj\\",
+      "outputPath": "C:\\Users\\Admin\\Desktop\\NetCore6Api\\MyApiNetCore6\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -6035,11 +6035,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Admin\\Desktop\\hanhngusi\\NetCore6Api\\Data.SqlServer\\Data.SqlServer.csproj": {
-              "projectPath": "C:\\Users\\Admin\\Desktop\\hanhngusi\\NetCore6Api\\Data.SqlServer\\Data.SqlServer.csproj"
+            "C:\\Users\\Admin\\Desktop\\NetCore6Api\\Data.SqlServer\\Data.SqlServer.csproj": {
+              "projectPath": "C:\\Users\\Admin\\Desktop\\NetCore6Api\\Data.SqlServer\\Data.SqlServer.csproj"
             },
-            "C:\\Users\\Admin\\Desktop\\hanhngusi\\NetCore6Api\\NetCore.Domain\\NetCore.Domain.csproj": {
-              "projectPath": "C:\\Users\\Admin\\Desktop\\hanhngusi\\NetCore6Api\\NetCore.Domain\\NetCore.Domain.csproj"
+            "C:\\Users\\Admin\\Desktop\\NetCore6Api\\NetCore.Domain\\NetCore.Domain.csproj": {
+              "projectPath": "C:\\Users\\Admin\\Desktop\\NetCore6Api\\NetCore.Domain\\NetCore.Domain.csproj"
             }
           }
         }
