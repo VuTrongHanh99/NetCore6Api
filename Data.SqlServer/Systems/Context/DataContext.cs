@@ -9,6 +9,7 @@ namespace Data.SqlServer.Context
         {
         }
         #region
+        public DbSet<HocVien> HocViens { get; set; }
         public DbSet<Make> Makes { get; set; }
         public DbSet<Size> Sizes { get; set; }
         public DbSet<BodyType> BodyTypes { get; set; }

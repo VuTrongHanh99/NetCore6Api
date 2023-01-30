@@ -81,6 +81,22 @@ namespace Data.SqlServer.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "HocViens",
+                columns: table => new
+                {
+                    id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    user_name = table.Column<string>(type: "nvarchar(128)", maxLength: 128, nullable: false),
+                    birthday = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    sex = table.Column<int>(type: "int", nullable: false),
+                    address = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_HocViens", x => x.id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Make",
                 columns: table => new
                 {
@@ -301,6 +317,9 @@ namespace Data.SqlServer.Migrations
 
             migrationBuilder.DropTable(
                 name: "Book");
+
+            migrationBuilder.DropTable(
+                name: "HocViens");
 
             migrationBuilder.DropTable(
                 name: "Make");

@@ -15,9 +15,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{514124E6-3
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data.SqlServer", "Data.SqlServer\Data.SqlServer.csproj", "{95A6D318-B0F9-49FA-9D77-A666D30C10AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCore.Application", "NetCore.Application\NetCore.Application.csproj", "{8662ED23-6793-4F7B-ACC7-7C7A37220FA7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCore.Application", "NetCore.Application\NetCore.Application.csproj", "{8662ED23-6793-4F7B-ACC7-7C7A37220FA7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCore.Domain", "NetCore.Domain\NetCore.Domain.csproj", "{3960EA04-B9CF-46A7-943A-F9251658AA85}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCore.Domain", "NetCore.Domain\NetCore.Domain.csproj", "{3960EA04-B9CF-46A7-943A-F9251658AA85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCore.Shared", "Infrastrucsture.NetCore.Shared\NetCore.Shared.csproj", "{81C3C4D3-E6E6-4DDE-825C-ECF33E33FD68}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,10 @@ Global
 		{3960EA04-B9CF-46A7-943A-F9251658AA85}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3960EA04-B9CF-46A7-943A-F9251658AA85}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3960EA04-B9CF-46A7-943A-F9251658AA85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81C3C4D3-E6E6-4DDE-825C-ECF33E33FD68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81C3C4D3-E6E6-4DDE-825C-ECF33E33FD68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81C3C4D3-E6E6-4DDE-825C-ECF33E33FD68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81C3C4D3-E6E6-4DDE-825C-ECF33E33FD68}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -52,6 +58,7 @@ Global
 		{95A6D318-B0F9-49FA-9D77-A666D30C10AE} = {514124E6-3700-4EAD-BF4A-75015A3E3B70}
 		{8662ED23-6793-4F7B-ACC7-7C7A37220FA7} = {26D3CDC6-D07F-4AC9-B9F3-0086FCB7255D}
 		{3960EA04-B9CF-46A7-943A-F9251658AA85} = {26D3CDC6-D07F-4AC9-B9F3-0086FCB7255D}
+		{81C3C4D3-E6E6-4DDE-825C-ECF33E33FD68} = {4470BC65-8885-4254-981B-ED42F5F46A1A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7097162E-D204-4805-AAA0-9FCBB4A04B64}

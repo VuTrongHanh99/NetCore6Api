@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Data.SqlServer.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20230116024057_DbInit")]
+    [Migration("20230130014146_DbInit")]
     partial class DbInit
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -191,6 +191,38 @@ namespace Data.SqlServer.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Book");
+                });
+
+            modelBuilder.Entity("Data.SqlServer.Data.HocVien", b =>
+                {
+                    b.Property<int>("MaHV")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasColumnName("id");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MaHV"), 1L, 1);
+
+                    b.Property<string>("DiaChi")
+                        .HasColumnType("nvarchar(max)")
+                        .HasColumnName("address");
+
+                    b.Property<int>("GioiTinh")
+                        .HasColumnType("int")
+                        .HasColumnName("sex");
+
+                    b.Property<string>("HoTen")
+                        .IsRequired()
+                        .HasMaxLength(128)
+                        .HasColumnType("nvarchar(128)")
+                        .HasColumnName("user_name");
+
+                    b.Property<DateTime?>("NgaySinh")
+                        .HasColumnType("datetime2")
+                        .HasColumnName("birthday");
+
+                    b.HasKey("MaHV");
+
+                    b.ToTable("HocViens");
                 });
 
             modelBuilder.Entity("Data.SqlServer.Data.Make", b =>

@@ -1,0 +1,12 @@
+C:\Users\Admin\Desktop\NetCore6Api\Infrastrucsture.NetCore.Shared\bin\Debug\net6.0\NetCore.Shared.deps.json
+C:\Users\Admin\Desktop\NetCore6Api\Infrastrucsture.NetCore.Shared\bin\Debug\net6.0\NetCore.Shared.dll
+C:\Users\Admin\Desktop\NetCore6Api\Infrastrucsture.NetCore.Shared\bin\Debug\net6.0\NetCore.Shared.pdb
+C:\Users\Admin\Desktop\NetCore6Api\Infrastrucsture.NetCore.Shared\obj\Debug\net6.0\NetCore.Shared.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\NetCore6Api\Infrastrucsture.NetCore.Shared\obj\Debug\net6.0\NetCore.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\NetCore6Api\Infrastrucsture.NetCore.Shared\obj\Debug\net6.0\NetCore.Shared.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\NetCore6Api\Infrastrucsture.NetCore.Shared\obj\Debug\net6.0\NetCore.Shared.AssemblyInfo.cs
+C:\Users\Admin\Desktop\NetCore6Api\Infrastrucsture.NetCore.Shared\obj\Debug\net6.0\NetCore.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\NetCore6Api\Infrastrucsture.NetCore.Shared\obj\Debug\net6.0\NetCore.Shared.dll
+C:\Users\Admin\Desktop\NetCore6Api\Infrastrucsture.NetCore.Shared\obj\Debug\net6.0\refint\NetCore.Shared.dll
+C:\Users\Admin\Desktop\NetCore6Api\Infrastrucsture.NetCore.Shared\obj\Debug\net6.0\NetCore.Shared.pdb
+C:\Users\Admin\Desktop\NetCore6Api\Infrastrucsture.NetCore.Shared\obj\Debug\net6.0\ref\NetCore.Shared.dll

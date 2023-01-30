@@ -26,4 +26,8 @@
 		<ProjectReference Include="..\NetCore.Domain\NetCore.Domain.csproj" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Folder Include="Common\" />
+	</ItemGroup>
+
 </Project>

@@ -17,14 +17,23 @@ namespace MyApiNetCore6.Reponsitories
             _mapper = mapper;
         }
 
-        public Task<int> AddBookAsync(BookModelEntity model)
+        public async Task<int> AddBookAsync(BookModelEntity model)
         {
-            throw new NotImplementedException();
+            var newBook = _mapper.Map<Book>(model);
+            _context.Books!.Add(newBook);
+            await _context.SaveChangesAsync();
+
+            return newBook.Id;
         }
 
-        public Task DeleteBookAsync(int id)
+        public async Task DeleteBookAsync(int id)
         {
-            throw new NotImplementedException();
+            var deleteBook = _context.Books!.SingleOrDefault(b => b.Id == id);
+            if (deleteBook != null)
+            {
+                _context.Books!.Remove(deleteBook);
+                await _context.SaveChangesAsync();
+            }
         }
 
         public async Task<List<BookModelEntity>> GetAllBooksAsync()
@@ -33,14 +42,20 @@ namespace MyApiNetCore6.Reponsitories
             return _mapper.Map<List<BookModelEntity>>(books);
         }
 
-        public Task<BookModelEntity> GetBookAsync(int id)
+        public async Task<BookModelEntity> GetBookAsync(int id)
         {
-            throw new NotImplementedException();
+            var book = await _context.Books!.FindAsync(id);
+            return _mapper.Map<BookModelEntity>(book);
         }
 
-        public Task UpdateBookAsync(int id, BookModelEntity model)
+        public async Task UpdateBookAsync(int id, BookModelEntity model)
         {
-            throw new NotImplementedException();
+            if (id == model.Id)
+            {
+                var updateBook = _mapper.Map<Book>(model);
+                _context.Books!.Update(updateBook);
+                await _context.SaveChangesAsync();
+            }
         }
     }
 }

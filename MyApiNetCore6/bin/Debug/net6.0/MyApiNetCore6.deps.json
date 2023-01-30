@@ -1158,7 +1158,8 @@
           "Microsoft.AspNetCore.Identity": "2.2.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.10",
           "Microsoft.EntityFrameworkCore": "6.0.10",
-          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.10"
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.10",
+          "NetCore.Shared": "1.0.0"
         },
         "runtime": {
           "Data.SqlServer.dll": {}
@@ -1167,6 +1168,11 @@
       "NetCore.Domain/1.0.0": {
         "runtime": {
           "NetCore.Domain.dll": {}
+        }
+      },
+      "NetCore.Shared/1.0.0": {
+        "runtime": {
+          "NetCore.Shared.dll": {}
         }
       }
     }
@@ -2065,6 +2071,11 @@
       "sha512": ""
     },
     "NetCore.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NetCore.Shared/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

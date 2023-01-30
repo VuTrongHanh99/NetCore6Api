@@ -1816,7 +1816,8 @@
           "Microsoft.AspNetCore.Identity": "2.2.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.10",
           "Microsoft.EntityFrameworkCore": "6.0.10",
-          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.10"
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.10",
+          "NetCore.Shared": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Data.SqlServer.dll": {}
@@ -1833,6 +1834,16 @@
         },
         "runtime": {
           "bin/placeholder/NetCore.Domain.dll": {}
+        }
+      },
+      "NetCore.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/NetCore.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NetCore.Shared.dll": {}
         }
       }
     }
@@ -5987,6 +5998,11 @@
       "type": "project",
       "path": "../NetCore.Domain/NetCore.Domain.csproj",
       "msbuildProject": "../NetCore.Domain/NetCore.Domain.csproj"
+    },
+    "NetCore.Shared/1.0.0": {
+      "type": "project",
+      "path": "../Infrastrucsture.NetCore.Shared/NetCore.Shared.csproj",
+      "msbuildProject": "../Infrastrucsture.NetCore.Shared/NetCore.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
