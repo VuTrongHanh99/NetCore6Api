@@ -86,7 +86,7 @@ namespace Data.SqlServer.Migrations
                 {
                     id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    user_name = table.Column<string>(type: "nvarchar(128)", maxLength: 128, nullable: false),
+                    full_name = table.Column<string>(type: "nvarchar(128)", maxLength: 128, nullable: false),
                     birthday = table.Column<DateTime>(type: "datetime2", nullable: true),
                     sex = table.Column<int>(type: "int", nullable: false),
                     address = table.Column<string>(type: "nvarchar(max)", nullable: true)
@@ -228,31 +228,37 @@ namespace Data.SqlServer.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
-            migrationBuilder.InsertData(
-                table: "BodyType",
-                columns: new[] { "id", "code" },
-                values: new object[,]
+            migrationBuilder.CreateTable(
+                name: "VBCCs",
+                columns: table => new
                 {
-                    { 1, "Coupe" },
-                    { 2, "Sedan" },
-                    { 3, "Hatchback" },
-                    { 4, "Wagon" },
-                    { 5, "Convertible" },
-                    { 6, "SUV" },
-                    { 7, "Truck" },
-                    { 8, "Mini Van" },
-                    { 9, "Roadster" }
+                    id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    so_hieu_vb = table.Column<string>(type: "nvarchar(128)", maxLength: 128, nullable: false),
+                    hoc_vien_id = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_VBCCs", x => x.id);
+                    table.ForeignKey(
+                        name: "FK_VBCCs_HocViens_hoc_vien_id",
+                        column: x => x.hoc_vien_id,
+                        principalTable: "HocViens",
+                        principalColumn: "id",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.InsertData(
-                table: "Size",
-                columns: new[] { "id", "code" },
+                table: "Book",
+                columns: new[] { "Id", "Description", "Name", "Price", "Quantity", "Title" },
                 values: new object[,]
                 {
-                    { 1, "Subcompact" },
-                    { 2, "Compact" },
-                    { 3, "Mid Size" },
-                    { 5, "Full Size" }
+                    { 1, "1", "Coupe", 1000.0, 10, "1" },
+                    { 2, "2", "Sedan", 1000.0, 10, "1" },
+                    { 3, "3", "Hatchback", 1000.0, 10, "1" },
+                    { 4, "5", "Wagon", 1000.0, 10, "1" },
+                    { 5, "4", "Convertible", 1000.0, 10, "1" },
+                    { 6, "6", "SUV", 1000.0, 10, "1" }
                 });
 
             migrationBuilder.CreateIndex(
@@ -293,6 +299,11 @@ namespace Data.SqlServer.Migrations
                 column: "NormalizedUserName",
                 unique: true,
                 filter: "[NormalizedUserName] IS NOT NULL");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_VBCCs_hoc_vien_id",
+                table: "VBCCs",
+                column: "hoc_vien_id");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -319,19 +330,22 @@ namespace Data.SqlServer.Migrations
                 name: "Book");
 
             migrationBuilder.DropTable(
-                name: "HocViens");
-
-            migrationBuilder.DropTable(
                 name: "Make");
 
             migrationBuilder.DropTable(
                 name: "Size");
 
             migrationBuilder.DropTable(
+                name: "VBCCs");
+
+            migrationBuilder.DropTable(
                 name: "AspNetRoles");
 
             migrationBuilder.DropTable(
                 name: "AspNetUsers");
+
+            migrationBuilder.DropTable(
+                name: "HocViens");
         }
     }
 }

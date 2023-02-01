@@ -1829,6 +1829,9 @@
       "NetCore.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "NetCore.Shared": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/NetCore.Domain.dll": {}
         },

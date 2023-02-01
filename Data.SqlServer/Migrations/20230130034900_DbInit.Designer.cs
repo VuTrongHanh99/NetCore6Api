@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Data.SqlServer.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20230130014146_DbInit")]
+    [Migration("20230130034900_DbInit")]
     partial class DbInit
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -115,53 +115,6 @@ namespace Data.SqlServer.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("BodyType");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Code = "Coupe"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            Code = "Sedan"
-                        },
-                        new
-                        {
-                            Id = 3,
-                            Code = "Hatchback"
-                        },
-                        new
-                        {
-                            Id = 4,
-                            Code = "Wagon"
-                        },
-                        new
-                        {
-                            Id = 5,
-                            Code = "Convertible"
-                        },
-                        new
-                        {
-                            Id = 6,
-                            Code = "SUV"
-                        },
-                        new
-                        {
-                            Id = 7,
-                            Code = "Truck"
-                        },
-                        new
-                        {
-                            Id = 8,
-                            Code = "Mini Van"
-                        },
-                        new
-                        {
-                            Id = 9,
-                            Code = "Roadster"
-                        });
                 });
 
             modelBuilder.Entity("Data.SqlServer.Data.Book", b =>
@@ -191,16 +144,72 @@ namespace Data.SqlServer.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Book");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Description = "1",
+                            Name = "Coupe",
+                            Price = 1000.0,
+                            Quantity = 10,
+                            Title = "1"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Description = "2",
+                            Name = "Sedan",
+                            Price = 1000.0,
+                            Quantity = 10,
+                            Title = "1"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Description = "3",
+                            Name = "Hatchback",
+                            Price = 1000.0,
+                            Quantity = 10,
+                            Title = "1"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Description = "5",
+                            Name = "Wagon",
+                            Price = 1000.0,
+                            Quantity = 10,
+                            Title = "1"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Description = "4",
+                            Name = "Convertible",
+                            Price = 1000.0,
+                            Quantity = 10,
+                            Title = "1"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Description = "6",
+                            Name = "SUV",
+                            Price = 1000.0,
+                            Quantity = 10,
+                            Title = "1"
+                        });
                 });
 
             modelBuilder.Entity("Data.SqlServer.Data.HocVien", b =>
                 {
-                    b.Property<int>("MaHV")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasColumnName("id");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MaHV"), 1L, 1);
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("DiaChi")
                         .HasColumnType("nvarchar(max)")
@@ -214,13 +223,13 @@ namespace Data.SqlServer.Migrations
                         .IsRequired()
                         .HasMaxLength(128)
                         .HasColumnType("nvarchar(128)")
-                        .HasColumnName("user_name");
+                        .HasColumnName("full_name");
 
                     b.Property<DateTime?>("NgaySinh")
                         .HasColumnType("datetime2")
                         .HasColumnName("birthday");
 
-                    b.HasKey("MaHV");
+                    b.HasKey("Id");
 
                     b.ToTable("HocViens");
                 });
@@ -263,28 +272,33 @@ namespace Data.SqlServer.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Size");
+                });
 
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Code = "Subcompact"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            Code = "Compact"
-                        },
-                        new
-                        {
-                            Id = 3,
-                            Code = "Mid Size"
-                        },
-                        new
-                        {
-                            Id = 5,
-                            Code = "Full Size"
-                        });
+            modelBuilder.Entity("Data.SqlServer.Data.VBCC", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasColumnName("id");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int?>("HocVienId")
+                        .IsRequired()
+                        .HasColumnType("int")
+                        .HasColumnName("hoc_vien_id");
+
+                    b.Property<string>("SoHieuVB")
+                        .IsRequired()
+                        .HasMaxLength(128)
+                        .HasColumnType("nvarchar(128)")
+                        .HasColumnName("so_hieu_vb");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("HocVienId");
+
+                    b.ToTable("VBCCs");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -418,6 +432,17 @@ namespace Data.SqlServer.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens", (string)null);
+                });
+
+            modelBuilder.Entity("Data.SqlServer.Data.VBCC", b =>
+                {
+                    b.HasOne("Data.SqlServer.Data.HocVien", "HocVien")
+                        .WithMany()
+                        .HasForeignKey("HocVienId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("HocVien");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

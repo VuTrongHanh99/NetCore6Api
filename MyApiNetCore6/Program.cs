@@ -8,6 +8,7 @@ using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using MyApiNetCore6.Reponsitories;
 using System.Text;
+using NetCore.Domain.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 #region          Thêm LOGIN header Api Swagger
@@ -61,6 +62,7 @@ builder.Services.AddAutoMapper(typeof(Program));
 #region  Đăng ký để sử dụng Repository
 //Life cycle DI: AddSignleton(), AddTransient(), AddScoped()
 builder.Services.AddScoped<IBookRepository, BookRepository>();
+builder.Services.AddScoped<IHocVienRepository, HocVienRepository>();
 builder.Services.AddScoped<IAccountRepository, AccountRepository>();
 #endregion
 #region  KHai báo lớp đăng nhập hệ thống Auth

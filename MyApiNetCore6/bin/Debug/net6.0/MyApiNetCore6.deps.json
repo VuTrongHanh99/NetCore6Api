@@ -1166,6 +1166,9 @@
         }
       },
       "NetCore.Domain/1.0.0": {
+        "dependencies": {
+          "NetCore.Shared": "1.0.0"
+        },
         "runtime": {
           "NetCore.Domain.dll": {}
         }

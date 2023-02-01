@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using MyApiNetCore6.Reponsitories;
 using NetCore.Domain.Entities;
+using NetCore.Domain.Interfaces;
 
 namespace MyApiNetCore6.Controllers
 {

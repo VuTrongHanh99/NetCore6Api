@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v6.0": {
       "NetCore.Domain/1.0.0": {
+        "dependencies": {
+          "NetCore.Shared": "1.0.0"
+        },
         "runtime": {
           "NetCore.Domain.dll": {}
+        }
+      },
+      "NetCore.Shared/1.0.0": {
+        "runtime": {
+          "NetCore.Shared.dll": {}
         }
       }
     }
   },
   "libraries": {
     "NetCore.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NetCore.Shared/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

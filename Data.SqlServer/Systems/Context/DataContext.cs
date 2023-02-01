@@ -9,6 +9,7 @@ namespace Data.SqlServer.Context
         {
         }
         #region
+        public DbSet<VBCC> VBCCs { get; set; }
         public DbSet<HocVien> HocViens { get; set; }
         public DbSet<Make> Makes { get; set; }
         public DbSet<Size> Sizes { get; set; }
@@ -19,23 +20,13 @@ namespace Data.SqlServer.Context
         {
             base.OnModelCreating(modelBuilder);
 
-            modelBuilder.Entity<Size>().HasData(
-                new Size { Id = 1, Code = "Subcompact" },
-                new Size { Id = 2, Code = "Compact" },
-                new Size { Id = 3, Code = "Mid Size" },
-                new Size { Id = 5, Code = "Full Size" }
-            );
-
-            modelBuilder.Entity<BodyType>().HasData(
-                new BodyType { Id = 1, Code = "Coupe" },
-                new BodyType { Id = 2, Code = "Sedan" },
-                new BodyType { Id = 3, Code = "Hatchback" },
-                new BodyType { Id = 4, Code = "Wagon" },
-                new BodyType { Id = 5, Code = "Convertible" },
-                new BodyType { Id = 6, Code = "SUV" },
-                new BodyType { Id = 7, Code = "Truck" },
-                new BodyType { Id = 8, Code = "Mini Van" },
-                new BodyType { Id = 9, Code = "Roadster" }
+            modelBuilder.Entity<Book>().HasData(
+                new Book { Id = 1, Name = "Coupe", Title="1", Description="1" ,Price=1000, Quantity=10},
+                new Book { Id = 2, Name = "Sedan", Title = "1", Description = "2", Price = 1000, Quantity = 10 },
+                new Book { Id = 3, Name = "Hatchback" , Title = "1", Description = "3", Price = 1000, Quantity = 10 },
+                new Book { Id = 4, Name = "Wagon" , Title = "1", Description = "5", Price = 1000, Quantity = 10 },
+                new Book { Id = 5, Name = "Convertible" , Title = "1", Description = "4", Price = 1000, Quantity = 10 },
+                new Book { Id = 6, Name = "SUV" , Title = "1", Description = "6", Price = 1000, Quantity = 10 }
             );
         }
     }

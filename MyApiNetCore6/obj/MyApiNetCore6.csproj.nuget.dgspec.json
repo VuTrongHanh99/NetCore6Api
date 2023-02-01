@@ -282,7 +282,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Admin\\Desktop\\NetCore6Api\\Infrastrucsture.NetCore.Shared\\NetCore.Shared.csproj": {
+                "projectPath": "C:\\Users\\Admin\\Desktop\\NetCore6Api\\Infrastrucsture.NetCore.Shared\\NetCore.Shared.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

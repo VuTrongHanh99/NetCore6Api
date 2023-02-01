@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Infrastrucsture.NetCore.Shared\NetCore.Shared.csproj" />
+  </ItemGroup>
+
 </Project>

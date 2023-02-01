@@ -20,6 +20,7 @@ namespace Data.SqlServer.Data
         public string? SoHieuVB { get; set; }
         [ForeignKey("HocVien")]
         [Column("hoc_vien_id")]
-        public int? OrganizationId { get; set; }
+        public int? HocVienId { get; set; }
+        public HocVien HocVien { get; set; }
     }
 }

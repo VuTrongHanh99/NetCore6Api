@@ -3,6 +3,7 @@ using Data.SqlServer.Context;
 using Data.SqlServer.Data;
 using Microsoft.EntityFrameworkCore;
 using NetCore.Domain.Entities;
+using NetCore.Domain.Interfaces;
 
 namespace MyApiNetCore6.Reponsitories
 {

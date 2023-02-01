@@ -1,7 +1,6 @@
-﻿using Data.SqlServer.Data;
-using NetCore.Domain.Entities;
+﻿using NetCore.Domain.Entities;
 
-namespace MyApiNetCore6.Reponsitories
+namespace NetCore.Domain.Interfaces
 {
     public interface IBookRepository
     {
