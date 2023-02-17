@@ -21,6 +21,6 @@ namespace Data.SqlServer.Data
         [ForeignKey("HocVien")]
         [Column("hoc_vien_id")]
         public int? HocVienId { get; set; }
-        public HocVien HocVien { get; set; }
+        public HocVien? HocVien { get; set; }
     }
 }

@@ -61,6 +61,7 @@ builder.Services.AddAutoMapper(typeof(Program));
 #endregion
 #region  Đăng ký để sử dụng Repository
 //Life cycle DI: AddSignleton(), AddTransient(), AddScoped()
+builder.Services.AddScoped<IVBCCRepository, VBCCRepository>();
 builder.Services.AddScoped<IBookRepository, BookRepository>();
 builder.Services.AddScoped<IHocVienRepository, HocVienRepository>();
 builder.Services.AddScoped<IAccountRepository, AccountRepository>();

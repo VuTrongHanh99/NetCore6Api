@@ -19,7 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCore.Application", "NetC
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCore.Domain", "NetCore.Domain\NetCore.Domain.csproj", "{3960EA04-B9CF-46A7-943A-F9251658AA85}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCore.Shared", "Infrastrucsture.NetCore.Shared\NetCore.Shared.csproj", "{81C3C4D3-E6E6-4DDE-825C-ECF33E33FD68}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCore.Shared", "Infrastrucsture.NetCore.Shared\NetCore.Shared.csproj", "{81C3C4D3-E6E6-4DDE-825C-ECF33E33FD68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElasticProject.Api", "ElasticProject.Api\ElasticProject.Api.csproj", "{084C49C8-A043-4D2E-B9BF-6FCD9471A8BD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +49,10 @@ Global
 		{81C3C4D3-E6E6-4DDE-825C-ECF33E33FD68}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{81C3C4D3-E6E6-4DDE-825C-ECF33E33FD68}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{81C3C4D3-E6E6-4DDE-825C-ECF33E33FD68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{084C49C8-A043-4D2E-B9BF-6FCD9471A8BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{084C49C8-A043-4D2E-B9BF-6FCD9471A8BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{084C49C8-A043-4D2E-B9BF-6FCD9471A8BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{084C49C8-A043-4D2E-B9BF-6FCD9471A8BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
